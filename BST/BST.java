@@ -82,7 +82,7 @@ public class BST {
         Node right = leastCommonAncestor(root.right, first, second);
         if(left != null && right != null) return root;
         if(left != null) return left;
-        else if(right != null) return right;
+        if(right != null) return right;
     }
 
     public static void main(String args[]) {
